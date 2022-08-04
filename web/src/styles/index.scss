@@ -1,0 +1,24 @@
+@import 'https://www.sky.com/assets/toolkit/v2.39.2/toolkit.min.css';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .logo {
+    height: 5em;
+    display: block;
+  }
+}
