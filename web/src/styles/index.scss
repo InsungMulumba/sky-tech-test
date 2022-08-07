@@ -1,6 +1,7 @@
-@import 'https://www.sky.com/assets/toolkit/v2.39.2/toolkit.min.css';
+@import "https://www.sky.com/assets/toolkit/v2.39.2/toolkit.min";
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -16,9 +17,54 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  justify-content: space-between;
+  min-height: 90vh;
+  padding: 0px 10%;
+  width: 70vw;
   .logo {
     height: 5em;
     display: block;
   }
+}
+
+#root {
+  display: flex;
+}
+
+input {
+  border: solid 2px black;
+}
+
+.search-result-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  top: 8%;
+  border: 2px solid #0072c9;
+  border-radius: 5px;
+  min-height: 70%;
+}
+
+.search-result {
+  margin: 10px 0px;
+  padding: 8px;
+}
+
+.box-container {
+  display: flex;
+  min-width: 100%;
+  justify-content: space-evenly;
+}
+
+button {
+  color: #fff;
+  background-color: #0073c5;
+  border-color: #0073c5;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+button:disabled {
+  background-color: #c0c0c0;
 }
