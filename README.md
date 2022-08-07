@@ -10,6 +10,7 @@
 - SCSS (optional)
 
 ## Requirements
+
 - Node.js (16.x.x)
 - Text Editor or IDE
 
@@ -17,7 +18,7 @@
 
 The purpose of this exercise is to help assess your technical skills as an engineer and how you approach a realistic technical task.
 
-- We **don't** expect you to complete the exercise to perfection or to finish everything. 
+- We **don't** expect you to complete the exercise to perfection or to finish everything.
 - This isn't a test of your memory. Please feel free to look things up. However blatant copy-pasting is discouraged.
 - If you're struggling, please ask for us for help. We don't want you to be stuck.
 
@@ -54,39 +55,46 @@ While tests are appreciated and encouraged, please avoid wasting any time strivi
 
 ### Tasks
 
-**Basic Search**
+**Basic Search - COMPLETED**
+
 - Add a search box which retrieves results via the API and displays them in a list.
 - The search should occur without the page refreshing
 
-**Pagination**
+**Pagination - COMPLETED**
+
 - Add a pagination component to the bottom of the results which fetches the next results without refreshing the page.
 - There should be 10 results per page
 
 **URL Rewriting**
+
 - Update the search page so that when the user performs a search, the URL is updated and when they refresh the page it displays the same results.
 - This should be done in such a way that if the user presses the back button they're taken to the previous results.
 - If you've completed the **pagination** task, you should include the page in the URL.
 
-**Search History**
+**Search History - COMPLETED**
+
 - Update the search page to save recent search terms in the browser (Cookies or Local Storage) and display them in a list.
 - There should never be more than 5 saved terms.
 - The terms should be removed according to FIFO (First In First Out)
 
-**Slugs**
+**Slugs - COMPLETED**
+
 - Update the API to extract the "slug" at the end of each article URL and add them to the response
 - For example the slug for `https://www.sky.com/help/articles/sky-broadband-pro` would be `sky=broadband-pro`
 
-**Sky Mobile**
+**Sky Mobile - COMPLETED**
+
 - Update the API to prioritise any results containing "Sky Mobile" by pushing them to the top.
 
-**Pagination API**
+**Pagination API - COMPLETED**
+
 - Update the API to accept a `page` parameter which will result in it returning only the result for that page.
 - There should be 10 results per page
 - This parameter should start at 1
 - For example given `page=3` you should return results at indicies `30-39`
 
 **LRU Cache**
+
 - Update the API to implement an LRU (Least Recently Used) cache for search results.
 - The cache should never contain more than 5 result sets.
 - If a request is received for a term which exists in the cache, the results should be served from there and rather than from the downstream API.
-
